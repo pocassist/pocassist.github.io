@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>开发文档 | pocassist</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/icon.png">
+    <meta name="description" content="全新的开源漏洞测试框架，实现poc在线编辑、运行、批量测试">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.d19b6ecd.js" as="script"><link rel="preload" href="/assets/js/2.ef289c00.js" as="script"><link rel="preload" href="/assets/js/10.21b3adde.js" as="script"><link rel="prefetch" href="/assets/js/11.8422c9c4.js"><link rel="prefetch" href="/assets/js/12.4394b517.js"><link rel="prefetch" href="/assets/js/13.9e1f6855.js"><link rel="prefetch" href="/assets/js/14.d48c127c.js"><link rel="prefetch" href="/assets/js/3.0b4e7aea.js"><link rel="prefetch" href="/assets/js/4.7a57c924.js"><link rel="prefetch" href="/assets/js/5.0a2ec025.js"><link rel="prefetch" href="/assets/js/6.63664bb0.js"><link rel="prefetch" href="/assets/js/7.260f2636.js"><link rel="prefetch" href="/assets/js/8.72a55e1d.js"><link rel="prefetch" href="/assets/js/9.3890291e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">pocassist</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/usage/" class="nav-link">
+  使用
+</a></div><div class="nav-item"><a href="/pocedit/" class="nav-link">
+  poc编辑手册
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发文档" class="dropdown-title"><span class="title">开发文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发文档" class="mobile-dropdown-title"><span class="title">开发文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dev/整体框架.html" class="nav-link">
+  整体框架
+</a></li><li class="dropdown-item"><!----> <a href="/dev/运行模式.html" class="nav-link">
+  运行模式
+</a></li><li class="dropdown-item"><!----> <a href="/dev/开发文档.html" class="nav-link">
+  开发文档
+</a></li><li class="dropdown-item"><!----> <a href="/dev/其他.html" class="nav-link">
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/poclist/" class="nav-link">
+  poc列表
+</a></div> <a href="https://github.com/jweny/pocassist/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/usage/" class="nav-link">
+  使用
+</a></div><div class="nav-item"><a href="/pocedit/" class="nav-link">
+  poc编辑手册
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发文档" class="dropdown-title"><span class="title">开发文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发文档" class="mobile-dropdown-title"><span class="title">开发文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dev/整体框架.html" class="nav-link">
+  整体框架
+</a></li><li class="dropdown-item"><!----> <a href="/dev/运行模式.html" class="nav-link">
+  运行模式
+</a></li><li class="dropdown-item"><!----> <a href="/dev/开发文档.html" class="nav-link">
+  开发文档
+</a></li><li class="dropdown-item"><!----> <a href="/dev/其他.html" class="nav-link">
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/poclist/" class="nav-link">
+  poc列表
+</a></div> <a href="https://github.com/jweny/pocassist/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>开发文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/dev/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.html#_0x01-技术栈" class="sidebar-link">0x01 技术栈</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/dev/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.html#_0x02-项目布局" class="sidebar-link">0x02 项目布局</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/dev/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.html#_0x03-cmd" class="sidebar-link">0x03 cmd</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/dev/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.html#_0x04-api" class="sidebar-link">0x04 api</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/dev/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.html#_0x05-pkg" class="sidebar-link">0x05 pkg</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/dev/%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3.html#_0x06-poc" class="sidebar-link">0x06 poc</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="开发文档"><a href="#开发文档" class="header-anchor">#</a> 开发文档</h1> <h2 id="_0x01-技术栈"><a href="#_0x01-技术栈" class="header-anchor">#</a> 0x01 技术栈</h2> <table><thead><tr><th>需求</th> <th>实现</th></tr></thead> <tbody><tr><td>命令行工具</td> <td>github.com/urfave/cli/v2</td></tr> <tr><td>加载配置文件</td> <td>github.com/spf13/viper</td></tr> <tr><td>服务端框架</td> <td>github.com/gin-gonic/gin</td></tr> <tr><td>身份认证 jwt</td> <td>github.com/dgrijalva/jwt-go</td></tr> <tr><td>orm</td> <td>gorm.io/gorm</td></tr> <tr><td>规则表达式</td> <td>github.com/google/cel-go/cel</td></tr> <tr><td>sqlite数据库驱动</td> <td>gorm.io/driver/sqlite</td></tr> <tr><td>mysql数据库驱动</td> <td>gorm.io/driver/mysql</td></tr> <tr><td>日志</td> <td>go.uber.org/zap</td></tr> <tr><td>http请求</td> <td>github.com/valyala/fasthttp</td></tr> <tr><td>限速</td> <td>golang.org/x/time/rate</td></tr> <tr><td>并发控制</td> <td>sync.WaitGroup</td></tr> <tr><td>swag</td> <td>github.com/swaggo/gin-swagger</td></tr> <tr><td>前端</td> <td><a href="https://antd-course.ulivz.com/intro.html#%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0" target="_blank" rel="noopener noreferrer">antd<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></td></tr> <tr><td>静态资源打包至go二进制</td> <td>github.com/elazarl/go-bindata-assetfs</td></tr></tbody></table> <h2 id="_0x02-项目布局"><a href="#_0x02-项目布局" class="header-anchor">#</a> 0x02 项目布局</h2> <p>pocassist 遵循 Golang 应⽤程序项⽬的<a href="https://github.com/golang-standards/project-layout/blob/master/README_zh-CN.md" target="_blank" rel="noopener noreferrer">基本布局<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>在二次开发前建议先阅读 <a href="https://github.com/golang-standards/project-layout/blob/master/README_zh-CN.md" target="_blank" rel="noopener noreferrer">Go项目标准布局<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="_0x03-cmd"><a href="#_0x03-cmd" class="header-anchor">#</a> 0x03 cmd</h2> <p><code>/cmd</code> 是项目入口</p> <ul><li><code>InitAll</code>方法在项目启动时最先执行：加载配置以及各个包的初始化工作</li> <li><code>HotConf</code>方法通过<code>viper</code>实现了配置文件实时监控，配置文件发生变更之后会重新<code>InitAll</code>，实现热加载</li></ul> <p><strong>目录结构</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>└── pocassist.go	入口函数 加载全局配置 初始化
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="_0x04-api"><a href="#_0x04-api" class="header-anchor">#</a> 0x04 api</h2> <p><code>/api</code> 是 api 框架，基于 gin 开发。</p> <p>为方便开发过程测试接口，源码中每个接口均编写了详细的注释。同时，当config.yaml 中 <code>run_mode: &quot;debug&quot;</code>（debug模式）下将开启swagger。访问：</p> <p>http://127.0.0.1:1231/swagger/index.html</p> <p><strong>目录结构</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>├── middleware
+│   └── jwt
+│       └── jwt.go				jwt身份验证
+├── msg
+│   └── msg.go					定义api数据交互格式
+└── routers
+    ├── route.go				注册路由
+    ├── ui.go					加载go-bindata-assetfs打包的静态页面
+    └── v1
+        ├── auth
+        │   └── auth.go			登录/登出/改密/个人详情
+        ├── plugin
+        │   └── plugin.go		poc 增/删/改/查/列表/详情/运行（单个）
+        ├── scan
+        │   ├── result
+        │   │   └── result.go	poc批量运行结果
+        │   ├── scan
+        │   │   └── scan.go		poc批量运行。支持定义三种目标：单个url / 单个请求报文（文件形式上传） / url列表（文件形式上传）
+        │   └── task
+        │       └── task.go		任务状态
+        ├── vulnerability
+        │   └── vulnerability.go	漏洞详情 增/删/改/查/列表/详情
+        └── webapp
+            └── webapp.go		漏洞详情中的”影响组件“ 增/列表
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h2 id="_0x05-pkg"><a href="#_0x05-pkg" class="header-anchor">#</a> 0x05 pkg</h2> <p><code>/pkg</code> 是整个项目的工具包。其中包含：</p> <ul><li>cel表达式实现：cel变量注入、cel方法注入</li> <li>配置文件：配置文件的加载、默认配置文件的生成</li> <li>数据库：orm model</li> <li>文件操作</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>├── cel
+│   ├── cel.go				cel表达式：注入函数、表达式计算
+│   ├── proto
+│   │   ├── http.pb.go		注入到cel中的类型（go-cel要求必须为protobuf格式）
+│   │   └── http.proto		生成http.pb.go的原始proto文件
+│   └── reverse
+│       └── reverse.go		实现cel中的Reverse（反连平台，dnslog/weblog）变量和方法
+├── conf
+│   ├── config.go			定义config结构体，Setup方法将加载配置文件至GlobalConfig。当前目录没有配置文件时，将创建默认的配置文件
+│   └── default.go			默认配置文件内容
+├── db
+│   ├── auth.go				身份认证相关的数据库操作
+│   ├── conn.go				数据库连接，当配置了sqlite时优先使用sqlite
+│   ├── plugin.go			poc相关的数据库操作
+│   ├── scanResult.go		扫描结果相关的数据库操作
+│   ├── scanTask.go			扫描任务状态相关的数据库操作
+│   ├── vulnerability.go	漏洞描述相关的数据库操作
+│   └── webapp.go			漏洞描述中所属组件相关的数据库操作
+├── file
+│   └── file.go				处理文件：处理批量扫描时上传的文件
+├── logging
+│   └── log.go				处理日志
+└── util
+    ├── jwt.go				生成和解析jwt token
+    ├── rand.go				随机数 随机字符
+    ├── request.go			fasthttp请求与响应
+    ├── result.go			定义poc检测结果格式
+    ├── tcp.go				tcp请求与响应
+    └── util.go				util初始化函数
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p>如何生成protobuf：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>go get github.com/golang/protobuf
+cd /pkg/cel/proto
+protoc --go_out=. http.proto
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="_0x06-poc"><a href="#_0x06-poc" class="header-anchor">#</a> 0x06 poc</h2> <p><img src="/assets/img/image-20210612201813017.0ce9b03e.png" alt="image-20210612201813017"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>├── rule
+│   ├── handle.go			  单个poc的流程控制
+│   ├── controller.go		cel表达式规则运行controller
+│   ├── run.go			    单个poc运行逻辑
+│   ├── parallel.go			并发控制
+│   ├── rule.go			    poc model 以及 set/search处理
+│   ├── cel.go				  cel控制器
+│   └── request.go			原始请求/构造的请求控制器
+└── scripts
+    ├── poc-go-memcached-unauth.go		demo脚本1
+    ├── poc-go-tomcat-weak-pass.go		demo脚本2
+    └── scripts.go						脚本注册、脚本调度
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>面向web的 poc 框架占用的内存资源绝大多数来源于开辟<code>请求</code>和<code>响应</code>。目前常见的 poc 框架并发都是在<code>同时运行poc数量</code>控制的。这里就会产生几个问题：</p> <ul><li>单纯控制 poc 并发，在每个 poc 内部是面向过程的。在一个 poc 结束之前，这个 poc 所占用的资源不会被立即释放，就可能造成资源浪费。例如：<strong>一个 poc 通常会发多个请求，而且要对每个请求的响应进行解析。每一个请求和响应在使用之后都进行初始化，下一个请求/响应复用这块内存，是不是就降低了内存开销。</strong></li> <li>单纯控制 poc 并发，占用资源的总量是无法预估的，容易造成崩溃。</li> <li><strong>我们知道发送一个请求是很快的，而解析响应的开销要多的多。实际上解析响应时，已经不再需要request对象了，这里也会有资源浪费。</strong></li></ul> <p>go 语言中有一个神奇的对象池 <code>sync.Pool</code>。神奇的地方在于，一开始这个池子会初始化一些对象供你使用，如果不够了呢，自己会通过new产生一些，当你放回去了之后这些对象会被别人进行复用。</p> <p>所以：</p> <p>pocassist 把使用频率高的对象（如poc对象、请求、响应、响应处理等）均使用对象池 <code>sync.Pool</code> 进行管理，大幅度减少对象的创建和回收的时间，内存使用效率极大提高</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>poc/rule/controller.go 将controller 用 <code>sync.Pool</code>管理</p> <p>pkg/util/requests 将 request / response / 响应处理 用 <code>sync.Pool</code>管理</p></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d19b6ecd.js" defer></script><script src="/assets/js/2.ef289c00.js" defer></script><script src="/assets/js/10.21b3adde.js" defer></script>
+  </body>
+</html>

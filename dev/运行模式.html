@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>运行模式 | pocassist</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/icon.png">
+    <meta name="description" content="全新的开源漏洞测试框架，实现poc在线编辑、运行、批量测试">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.d19b6ecd.js" as="script"><link rel="preload" href="/assets/js/2.ef289c00.js" as="script"><link rel="preload" href="/assets/js/13.9e1f6855.js" as="script"><link rel="prefetch" href="/assets/js/10.21b3adde.js"><link rel="prefetch" href="/assets/js/11.8422c9c4.js"><link rel="prefetch" href="/assets/js/12.4394b517.js"><link rel="prefetch" href="/assets/js/14.d48c127c.js"><link rel="prefetch" href="/assets/js/3.0b4e7aea.js"><link rel="prefetch" href="/assets/js/4.7a57c924.js"><link rel="prefetch" href="/assets/js/5.0a2ec025.js"><link rel="prefetch" href="/assets/js/6.63664bb0.js"><link rel="prefetch" href="/assets/js/7.260f2636.js"><link rel="prefetch" href="/assets/js/8.72a55e1d.js"><link rel="prefetch" href="/assets/js/9.3890291e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">pocassist</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/usage/" class="nav-link">
+  使用
+</a></div><div class="nav-item"><a href="/pocedit/" class="nav-link">
+  poc编辑手册
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发文档" class="dropdown-title"><span class="title">开发文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发文档" class="mobile-dropdown-title"><span class="title">开发文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dev/整体框架.html" class="nav-link">
+  整体框架
+</a></li><li class="dropdown-item"><!----> <a href="/dev/运行模式.html" class="nav-link">
+  运行模式
+</a></li><li class="dropdown-item"><!----> <a href="/dev/开发文档.html" class="nav-link">
+  开发文档
+</a></li><li class="dropdown-item"><!----> <a href="/dev/其他.html" class="nav-link">
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/poclist/" class="nav-link">
+  poc列表
+</a></div> <a href="https://github.com/jweny/pocassist/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/usage/" class="nav-link">
+  使用
+</a></div><div class="nav-item"><a href="/pocedit/" class="nav-link">
+  poc编辑手册
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发文档" class="dropdown-title"><span class="title">开发文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发文档" class="mobile-dropdown-title"><span class="title">开发文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dev/整体框架.html" class="nav-link">
+  整体框架
+</a></li><li class="dropdown-item"><!----> <a href="/dev/运行模式.html" class="nav-link">
+  运行模式
+</a></li><li class="dropdown-item"><!----> <a href="/dev/开发文档.html" class="nav-link">
+  开发文档
+</a></li><li class="dropdown-item"><!----> <a href="/dev/其他.html" class="nav-link">
+  其他
+</a></li></ul></div></div><div class="nav-item"><a href="/poclist/" class="nav-link">
+  poc列表
+</a></div> <a href="https://github.com/jweny/pocassist/" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>运行模式</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/dev/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F.html#_0x01-后端" class="sidebar-link">0x01 后端</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/dev/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F.html#_1-1-环境" class="sidebar-link">1-1 环境</a></li><li class="sidebar-sub-header"><a href="/dev/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F.html#_1-2-源码" class="sidebar-link">1-2 源码</a></li><li class="sidebar-sub-header"><a href="/dev/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F.html#_1-3-swagger配置" class="sidebar-link">1-3 swagger配置</a></li></ul></li><li><a href="/dev/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F.html#_0x02-前端" class="sidebar-link">0x02 前端</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/dev/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F.html#_2-1-环境" class="sidebar-link">2-1 环境</a></li><li class="sidebar-sub-header"><a href="/dev/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F.html#_2-2-源码" class="sidebar-link">2-2 源码</a></li><li class="sidebar-sub-header"><a href="/dev/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F.html#_2-3-静态文件打包至go二进制" class="sidebar-link">2-3 静态文件打包至go二进制</a></li><li class="sidebar-sub-header"><a href="/dev/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F.html#_2-4-前后端分离部署-nginx" class="sidebar-link">2-4 前后端分离部署(nginx)</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="运行模式"><a href="#运行模式" class="header-anchor">#</a> 运行模式</h1> <h2 id="_0x01-后端"><a href="#_0x01-后端" class="header-anchor">#</a> 0x01 后端</h2> <h3 id="_1-1-环境"><a href="#_1-1-环境" class="header-anchor">#</a> 1-1 环境</h3> <p>go 1.13.3</p> <h3 id="_1-2-源码"><a href="#_1-2-源码" class="header-anchor">#</a> 1-2 源码</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git clone https://github.com/jweny/pocassist.git
+cd pocassist
+go build
+./pocassist
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_1-3-swagger配置"><a href="#_1-3-swagger配置" class="header-anchor">#</a> 1-3 swagger配置</h3> <p>开发过程中，可以使用 swagger 测试 api 是否正常运行</p> <p>gin-swagger 的配置可参考 <a href="https://hawli.cn/2018/04/09/swag%E6%B3%A8%E8%A7%A3%E6%8C%87%E5%8D%97/" target="_blank" rel="noopener noreferrer">教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>或者参考我已经写好的 swagger 注解（每个 api 方法都有）</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>当 config.yaml 中<code>run_mode: &quot;debug&quot;</code>时，pocassist 将以debug方式启动，届时将自动启用swagger</p> <p>访问地址<code>http://127.0.0.1:1231/swagger/index.html</code></p></div> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>swagger 在 gin 中注册路由的逻辑请查看<code>api/routers/router.go:InitRouter</code> 方法</p></div> <p>当你开发了新的接口，或者更改了当前注解，可通过以下方式更新：</p> <ol><li><code>cd pocassist</code></li> <li>安装 swag <code>go get -u github.com/swaggo/swag/cmd/swag</code></li> <li>初始化 swag <code>swag init</code>，初始化完成之后将在当前目录创建一个 <code>docs</code> 目录，目录中有生成 go文件、json文件、yaml文件</li> <li><code>go build</code>编译成go二进制</li></ol> <h2 id="_0x02-前端"><a href="#_0x02-前端" class="header-anchor">#</a> 0x02 前端</h2> <h3 id="_2-1-环境"><a href="#_2-1-环境" class="header-anchor">#</a> 2-1 环境</h3> <p>安装 yarn</p> <h3 id="_2-2-源码"><a href="#_2-2-源码" class="header-anchor">#</a> 2-2 源码</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>git clone https://github.com/jweny/pocassistweb.git
+cd pocassistweb
+# 本地运行
+yarn start
+# 打包成静态文件
+yarn build
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="_2-3-静态文件打包至go二进制"><a href="#_2-3-静态文件打包至go二进制" class="header-anchor">#</a> 2-3 静态文件打包至go二进制</h3> <ol><li><p>编辑前端源码，本地运行通过</p></li> <li><p>打包， <code>yarn build</code></p></li> <li><p>将生成的 build 文件夹 copy 至 pocassist/web/ ， 此时 build 文件夹的路径为 <code>pocassist/web/build</code></p></li> <li><p>安装<a href="https://github.com/elazarl/go-bindata-assetfs" target="_blank" rel="noopener noreferrer">go-bindata-assetfs<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，安装方式<a href="https://github.com/elazarl/go-bindata-assetfs" target="_blank" rel="noopener noreferrer">点击<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>将静态文件转为<code>bindata.go</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>cd pocassist
+go-bindata-assetfs -o web/bindata.go -pkg web web/build/...
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p>此时会生成一个<code>pocassist/web/bindata.go</code>文件</p></li> <li><p><code>go build</code>编译成go二进制</p></li></ol> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>gin 加载 bindata.go 的逻辑在 <code>/api/ui.go</code>中。使用 goland 查看这段代码是会被标红：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Asset:     web.Asset,
+AssetDir:  web.AssetDir,
+AssetInfo: web.AssetInfo,
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>原因为<code>bindata.go</code>文件太大，goland 不会做代码分析关联，不影响正常编译运行。</p></div> <h3 id="_2-4-前后端分离部署-nginx"><a href="#_2-4-前后端分离部署-nginx" class="header-anchor">#</a> 2-4 前后端分离部署(nginx)</h3> <ol><li><p>编辑前端源码，本地运行通过</p></li> <li><p>打包。<code>yarn build</code></p></li> <li><p>将  build 文件夹 上传至服务器</p></li> <li><p>安装 nginx</p></li> <li><p>修改 nginx.conf 反向代理后端</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>pstream pocassistAPI {
+				# pocassist api 端口
+        server 127.0.0.1:1231;
+    }
+server {
+        listen       80;
+        location / {
+        		# 配置build文件夹路径
+            root /opt/pocassistWEB/build/;
+        }
+        location /api/ {
+            proxy_pass http://pocassistAPI/api/;
+        }
+        error_page 404 /404.html;
+            location = /40x.html {
+        }
+        error_page 500 502 503 504 /50x.html;
+            location = /50x.html {
+        }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d19b6ecd.js" defer></script><script src="/assets/js/2.ef289c00.js" defer></script><script src="/assets/js/13.9e1f6855.js" defer></script>
+  </body>
+</html>
